@@ -3,7 +3,7 @@ body {
   color-scheme: dark;
   background: var(--bckg-primary) !important;
 }
-html[data-color-mode="light"] {
+html[data-color-mode="light"], html[data-color-mode="dark"] {
   --bckg-primary: #212121;
   --bckg-dark: #1a1a1a;
   --bckg-light: #333333;
@@ -44,7 +44,7 @@ html[data-color-mode="light"] {
   --dropdown-active: #5c6167;
 }
 
-html[data-color-mode="light"] {
+html[data-color-mode="light"], html[data-color-mode="dark"] {
   --link-color: var(--link-primary);
   --link-hover-color: var(--link-hover);
   --link-active-color: var(--link-active);
@@ -1033,4 +1033,31 @@ header.head h2 a.back:before {
 .p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags {
   position: relative;
   display: flex;
+}
+
+/* Fix for dropdown menus and filters */
+.ss-content, 
+.choices__list, 
+.choices__list--dropdown, 
+.select2-dropdown, 
+.b-list_of_options, 
+.c-filter-select, 
+.menu {
+  background: var(--bckg-primary) !important;
+  color: var(--txt-primary) !important;
+}
+
+.ss-content .ss-option:hover, 
+.choices__item--choice:hover, 
+.select2-results__option:hover {
+  background: var(--bckg-light) !important;
+}
+
+/* Reset injected central area background slider color */
+.l-page {
+  background-color: transparent !important;
+}
+
+.b-ajax::before {
+  background: transparent !important;
 }
