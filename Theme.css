@@ -1064,3 +1064,11 @@ header.head h2 a.back:before {
 .b-ajax::before {
   background: transparent !important;
 }
+
+.c-ms-option .c-ms-option-mark {
+  border-color: var(--txt-secondary-dark) !important;
+}
+.c-ms-option.is-on .c-ms-option-mark {
+  background: var(--clr-main-light) !important;
+  border-color: var(--clr-main-light) !important;
+}
