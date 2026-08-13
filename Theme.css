@@ -1042,6 +1042,8 @@ header.head h2 a.back:before {
 .select2-dropdown, 
 .b-list_of_options, 
 .c-filter-select, 
+.c-ms-dropdown,
+.c-ms-search,
 .menu {
   background: var(--bckg-primary) !important;
   color: var(--txt-primary) !important;
@@ -1049,7 +1051,8 @@ header.head h2 a.back:before {
 
 .ss-content .ss-option:hover, 
 .choices__item--choice:hover, 
-.select2-results__option:hover {
+.select2-results__option:hover,
+.c-ms-option:hover {
   background: var(--bckg-light) !important;
 }
 
